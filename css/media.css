@@ -42,7 +42,7 @@ font-size: 36px;
 
 
 .footer-form-input {
-min-width: 398px;
+width: 398px;
 height: 40px;
 }
 
@@ -79,13 +79,19 @@ width: 768px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 24px;
+  gap: 72px 24px;
+  
 }
 
 .main-title {
 font-size: 56px;
 line-height: 1.07;
 max-width: 496px;
+}
+
+.header {
+padding-top: 16px;
+padding-bottom: 16px;
 }
 
 .header-container {
@@ -157,7 +163,7 @@ color:var(--products-color);
     content: '';
     position: absolute;
     left: 0px;
-    bottom: -24px;
+    bottom: -29px;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -191,6 +197,10 @@ padding-top: 96px;
 padding-bottom: 96px;
 }
 
+.company-container {
+  width: 582px;
+}
+
 .company-list {
   display: flex;
   flex-wrap: wrap;
@@ -211,9 +221,10 @@ width: calc((100% - 48px) / 3);
 
 .footer-container {
 flex-direction: row;
- display: flex;
-  flex-wrap: wrap; 
-  }
+display: flex;
+flex-wrap: wrap; 
+width: 582px;
+}
 
 .container-left {
   margin-right: 24px;
@@ -249,11 +260,9 @@ gap: px;
 
 .footer-form-input {
   margin-right: 24px;
-  width: 264px;
   height: 40px;
-  
-  }
-*/
+   }
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -261,12 +270,20 @@ gap: px;
     min-width: 1158px; 
 }
 
+.header {
+padding-top: 24px;
+padding-bottom: 24px;
+}
 .header-logo {
   margin-right: 76px;
   }
 
 .header-address-list {
   display: flex;
+}
+
+.current::after {
+  bottom: -24px;
 }
 
 .header-address-link {
@@ -503,7 +520,7 @@ padding-bottom: 100px;
 } 
 
 .footer-form-input-desk {
-width: 264px;
+
 }
  
 .footer-main-link:hover,
@@ -544,6 +561,11 @@ display: none;
 display: none;  
 }
 
+.hero-title {
+  display: flex;
+justify-content: center;
+}
+
 .hero-images {
 display: none;
 }
@@ -551,6 +573,13 @@ display: none;
 .section-second {
   display: none;
 }
+
+ .footer-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    }
 }
 
 @media screen and (max-width: 1157px) {
@@ -582,6 +611,13 @@ padding-bottom: 96px;
   margin-bottom: 104px;
 }
 }
+@media screen and (min-width: 768px) {
+  .footer-form-input {
+ width: 264px;
+  }
+}
 
+
+ 
 
 
